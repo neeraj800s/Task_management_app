@@ -68,8 +68,8 @@ This is a robust backend for a Task Management System built with Node.js, Expres
     ```
 
 2.  The server will start on port 3000 (default).
-    - API: `http://localhost:3000/api`
-    - Documentation: `http://localhost:3000/api-docs`
+    - API: `https://taskmanagementapp-production-e589.up.railway.app/api`
+    - Documentation: `https://taskmanagementapp-production-e589.up.railway.app/api-docs`
 
 ## API Endpoints
 
