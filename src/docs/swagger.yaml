@@ -4,7 +4,7 @@ info:
   description: API for managing tasks with authentication
   version: 1.0.0
 servers:
-  - url: http://localhost:3000/api
+  - url: http://localhost:3000
 components:
   securitySchemes:
     bearerAuth:
@@ -45,7 +45,7 @@ components:
 security:
   - bearerAuth: []
 paths:
-  /auth/register:
+  /api/auth/register:
     post:
       summary: Register a new user
       security: []
@@ -69,7 +69,7 @@ paths:
       responses:
         201:
           description: User registered successfully
-  /auth/login:
+  /api/auth/login:
     post:
       summary: Login user
       security: []
@@ -90,7 +90,7 @@ paths:
       responses:
         200:
           description: Login successful
-  /media/tasks:
+  /api/tasks:
     get:
       summary: Get all tasks
       responses:
@@ -113,7 +113,7 @@ paths:
       responses:
         201:
           description: Task created
-  /tasks/{id}:
+  /api/tasks/{id}:
     get:
       summary: Get a task by ID
       parameters:
